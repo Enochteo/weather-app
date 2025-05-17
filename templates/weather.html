@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #00d1b2;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      text-align: center;
+    }
+    input[type="text"] {
+      padding: 10px;
+      width: 60%;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #00aaff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .weather-card {
+      margin-top: 30px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      display: inline-block;
+      text-align: left;
+    }
+    .weather-card img {
+      width: 30px;
+      vertical-align: middle;
+    }
+    .weather-card h2 {
+      display: inline;
+      margin-left: 10px;
+    }
+    .weather-card p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>What's the weather like?</header>
+
+  <div class="container">
+    <input type="text" placeholder="City Name" />
+    <button>Add City</button>
+
+    <div class="weather-card">
+      <img src="{{ url_for('static', filename='weather.png') }}" alt="weather image">
+      <h2>Las Vegas</h2>
+      <p>29°F</p>
+      <p>Thunderstorm with heavy rain</p>
+    </div>
+  </div>
+
+</body>
+</html>
