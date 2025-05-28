@@ -18,7 +18,7 @@ def weather():
         params = {
             'q': city,
             'appid': API_KEY,
-            'units': 'imperial'
+            'units': 'metric'
         }
         response = requests.get(BASE_URL, params=params)
         if response.status_code == 200:
@@ -27,7 +27,9 @@ def weather():
                 'city': city,
                 'temperature': r['main']['temp'],
                 'description': r['weather'][0]['description'],
-                'icon': r['weather'][0]['icon']
+                'icon': r['weather'][0]['icon'],
+                'humidity':r['main']['humidity'],
+                'wind_speed': r['wind']['speed']
             }
         else:
             weather_data = {'error': 'City not found'}
