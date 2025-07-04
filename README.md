@@ -2,10 +2,6 @@
 A simple and responsive weather application built with Flask, Bootstrap, and the OpenWeatherMap API. This app allows users to enter a city name and retrieve real-time weather data including temperature, description, humidity, and wind speed.
 
 
-Why you ask?
-It's because I would rather use a weather app whose defaults unit are metric :)
-
-Just Kidding
 ## Features
 - Search weather by city name
 - Real time temperature display with **metric** units
