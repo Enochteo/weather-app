@@ -18,7 +18,7 @@ A simple and responsive weather application built with Flask, Bootstrap, and the
 ![demo pic 1](image-1.png)
 ![demo pic 2](image-2.png)
 
-## To add
+## Features To add
 - Geolocation
 - Dark mode
 - animated icons
